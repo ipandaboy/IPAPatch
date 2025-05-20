@@ -207,8 +207,8 @@ static void disable_ioctl() {
 {
     if (isatty(1)) {
         disable_exit();
-        disable_pt_deny_attach();
-        disable_sysctl_debugger_checking();
+        // disable_pt_deny_attach();
+        // disable_sysctl_debugger_checking();
         disable_syscall_debugger_checking();
         disable_isatty_debugger_checking();
 //        kill_anti_debug(); //patch svc 0x80 anti debug
